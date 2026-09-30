@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="vh-100 d-flex flex-wrap align-items-start justify-content-center position-relative">
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg w-100 navbar-dark bg-opacity">
+
+            <a class="navbar-brand" href="#">
+                <img 
+                    src="images/logo.png" 
+                    class="logo" 
+                    alt="spice restaurant logo"
+                >
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Recipes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            ABOUT
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            BLOG
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            CONTACTS
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Main Title -->
+
+        <h1 class="w-100 text-white font-weight-bolder text-center">
+            Never Miss a Recipe!
+        </h1>
+
+
+        <!-- Search -->
+
+        <div class="searchInput position-absolute w-75 m-auto p-5">
+
+            <div class="row no-gutters">
+
+                <div class="col-md-10">
+
+                    <input
+                        id="searchInput"
+                        placeholder="search recipes"
+                        class="form-control"
+                        type="text"
+                    >
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <button
+                        id="searchBtn"
+                        class="btn btn-block text-white btn-mine"
+                    >
+                        search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= RECIPES SECTION ================= -->
+
+    <section id="recipesSearch" class="text-center py-5">
+
+        <div class="container-fluid py-5">
+
+            <h2>
+                Recipe Categories
+            </h2>
+
+            <p class="lead">
+
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                <br>
+
+                sed tincidunt ut laoreet dolore magna aliquam erat volutpat lorem
+
+            </p>
+
+
+            <!-- ================= BUTTONS ================= -->
+
+            <div class="row my-5 justify-content-center">
+
+
+                <!-- ALL -->
+
+                <div class="col-md-2 mb-3">
+
+                    <button
+                        onclick="getAll()"
+                        class="product-btn"
+                    >
+                        All
+                    </button>
+
+                </div>
+
+
+                <!-- MANGO -->
+
+                <div class="col-md-2 mb-3">
+
+                    <button
+                        onclick="getProduct('mango')"
+                        class="product-btn"
+                    >
+                        Mango
+                    </button>
+
+                </div>
+
+
+                <!-- MELON -->
+
+                <div class="col-md-2 mb-3">
+
+                    <button
+                        onclick="getProduct('melon')"
+                        class="product-btn"
+                    >
+                        Melon
+                    </button>
+
+                </div>
+
+
+                <!-- NECTARINE -->
+
+                <div class="col-md-2 mb-3">
+
+                    <button
+                        onclick="getProduct('nectarine')"
+                        class="product-btn"
+                    >
+                        Nectarine
+                    </button>
+
+                </div>
+
+
+                <!-- ORANGE -->
+
+                <div class="col-md-2 mb-3">
+
+                    <button
+                        onclick="getProduct('orange')"
+                        class="product-btn"
+                    >
+                        Orange
+                    </button>
+
+                </div>
+
+
+                <!-- PAPAYA -->
+
+                <div class="col-md-2 mb-3">
+
+                    <button
+                        onclick="getProduct('papaya')"
+                        class="product-btn"
+                    >
+                        Papaya
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PRODUCTS ================= -->
+
+            <div class="container">
+
+                <div
+                    class="row"
+                    id="rowData"
+                >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/mine.js"></script>
+
+</body>
+</html>
